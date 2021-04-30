@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'https://cryptic-river-82158.herokuapp.com'
+  patientEndPoint: 'https://cryptic-river-82158.herokuapp.com'
 };
 
 /*

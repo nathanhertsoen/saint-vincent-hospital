@@ -4,6 +4,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { SharedModule } from '../shared/shared.module';
+import { PatientService } from './services/http/patient.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -13,8 +15,11 @@ import { SharedModule } from '../shared/shared.module';
   imports: [
     CommonModule,
     MatToolbarModule,
-    SharedModule
+    SharedModule,
+    HttpClientModule
+    
   ],
+  providers: [PatientService],
   exports: [
     HeaderComponent,
     FooterComponent

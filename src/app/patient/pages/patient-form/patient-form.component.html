@@ -1,1 +1,44 @@
-<p>patient-form works!</p>
+<form [formGroup]="patientForm" (ngSubmit)="onSubmit(patientForm.value)">
+    <div>
+        <mat-form-field appearance="fill">
+            <mat-label>nom :</mat-label>
+            <input matInput formControlName="nom" placeholder="Billy" type="text">
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field appearance="fill">
+            <mat-label>prenom :</mat-label>
+            <input matInput formControlName="prenom" placeholder="McKalagan" type="text">
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field appearance="fill">
+            <mat-label>genre :</mat-label>
+            <input matInput formControlName="genre" placeholder="H" type="text">
+        </mat-form-field>
+    </div>
+
+
+    <div>
+        <mat-form-field appearance="fill">
+            <mat-label>BirthYear :</mat-label>
+            <input matInput formControlName="birthYear" placeholder="1970" type="number" min="2000">
+        </mat-form-field>
+    </div>
+
+    {{patientForm.valid}}
+
+    <button mat-button color="primary" [disabled]="!patientForm.valid">
+    <mat-icon>add</mat-icon>
+    Ajouter
+  </button>
+
+</form>
+<form>
+    <button mat-button color="primary">
+    <mat-icon>modify</mat-icon>
+    Modify
+  </button>
+
+
+</form>

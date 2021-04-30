@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://cryptic-river-82158.herokuapp.com'
+  patientEndPoint: 'https://cryptic-river-82158.herokuapp.com'
 };
