@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "monprojet1-e3c6c": {
+      "hosting": {
+        "saint-vincent-hospital": [
+          "monprojet1-e3c6c"
+        ]
+      }
+    }
+  }
+}

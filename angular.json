@@ -121,6 +121,10 @@
               "devServerTarget": "saint-vincent-hospital:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }
